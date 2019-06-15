@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Web Development Notes'
+project = u'Intro to Web Development'
 copyright = u'2019, Sann Min Win'
 author = u'Sann Min Win'
 
@@ -40,7 +40,6 @@ release = u'0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,7 +64,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -103,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'WebDevelopmentNotesdoc'
+htmlhelp_basename = 'IntrotoWebDevelopmentdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'WebDevelopmentNotes.tex', u'Web Development Notes Documentation',
+    (master_doc, 'IntrotoWebDevelopment.tex', u'Intro to Web Development Documentation',
      u'Sann Min Win', 'manual'),
 ]
 
@@ -140,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'webdevelopmentnotes', u'Web Development Notes Documentation',
+    (master_doc, 'introtowebdevelopment', u'Intro to Web Development Documentation',
      [author], 1)
 ]
 
@@ -151,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WebDevelopmentNotes', u'Web Development Notes Documentation',
-     author, 'WebDevelopmentNotes', 'One line description of project.',
+    (master_doc, 'IntrotoWebDevelopment', u'Intro to Web Development Documentation',
+     author, 'IntrotoWebDevelopment', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -176,8 +175,3 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
-
-# -- Options for todo extension ----------------------------------------------
-
-# If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
