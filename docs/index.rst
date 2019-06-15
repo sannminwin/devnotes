@@ -10,6 +10,8 @@ Welcome to Intro to Web Development's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   html/html
+
 
 
 Indices and tables
