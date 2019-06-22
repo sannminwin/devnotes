@@ -19,13 +19,15 @@ Code sample
 
    <!DOCTYPE html>
     <html>
-        <title>My First Web Page</title>
-            <body>
+        <head>
+            <title>My First Web Page</title>
+        </head>
+        <body>
 
-                <h1>My first day as a programmer</h1>
-                <p>It is exciting.</p>
+            <h1>My first day as a programmer</h1>
+            <p>It is exciting.</p>
 
-            </body>
+        </body>
     </html>
 
 
