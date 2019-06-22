@@ -13,17 +13,19 @@ A text header, denoted using the <h1>, <h2>, <h3>, <h4>, <h5>, <h6> tags.
 
    <!DOCTYPE html>
     <html>
-        <title>My First Web Page</title>
-            <body>
+        <head>
+            <title>HTML Headings</title>
+        </head>
+        <body>
 
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
-                <h5>Heading 5</h5>
-                <h6>Heading 6</h6>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
 
-            </body>
+        </body>
     </html>
 
 
@@ -36,12 +38,13 @@ A paragraph, denoted using the <p> tag.
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML Paragraphs </title>
+        </head>
         <body>
-
             <p>This is a paragraph.</p>
             <p>This is a paragraph.</p>
             <p>This is a paragraph.</p>
-
         </body>
     </html>
 
@@ -75,16 +78,23 @@ You can add comments to your HTML source by using the following syntax
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML Comment </div>
+        </head>
         <body>
-
-            <!-- Write your comments here -->
-            <!-- single line comment -->
+            <!-- add heading here -->
+            <h1> Learning how to use comment in html </h1>
             <!-- 
-                multiline line comments
-                1. create html
-                2. add body tag and head tag
-                3. add p tag
+                explain about comment
+                1. single line comment
+                2. multi lines comment
              -->
+             <p>
+             Single line comment is used when comment stays in single line.
+             </p>
+             <p>
+             Multi lines comment is used when comment take more than one line.
+             </p>
 
         </body>
     </html>
@@ -100,15 +110,62 @@ You can click on a link and jump to another document.
    :linenos:
 
     <!DOCTYPE html>
+    
     <html>
+        <head>
+            <title> HTML Links </title>
+        </head>
         <body>
 
             <h2>HTML Links</h2>
+            <h3> This link connect to external link </h3>
             <p>
                 Visit linkedin profile to 
                 <a href="https://www.linkedin.com/in/sannminwin/"> learn more </a>
                 about the author.
             </p>
+
+        </body>
+    </html>
+
+.. code-block:: html
+   :linenos:
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title> HTML Links </title>
+        </head>
+        <body>
+
+            <h2>HTML Links</h2>
+            <h3> This link connect to internal link (link within your website) </h3>
+            <p>
+                Visit homepage
+                <a href="./index.html"> visit home page </a>
+                about the author.
+            </p>
+
+        </body>
+    </html>
+
+
+.. code-block:: html
+   :linenos:
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title> HTML Links </title>
+        </head>
+        <body>
+
+            <h2>HTML Links</h2>
+            <h3> This link connect to elements within same page</h3>
+            <a href="#about>  go to about session </a>
+            <div id="about">
+            This is about session.
+            </div>
 
         </body>
     </html>
@@ -125,9 +182,13 @@ The src attribute specifies the URL (web address) of the image.
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML Images </title>
+        </head>
         <body>
 
             <h2>Lorem Ipsum</h2>
+            <h3> This code serves image from the web </h3>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -139,6 +200,38 @@ The src attribute specifies the URL (web address) of the image.
 
             <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/4/42/Aung_San_Suu_Kyi_17_November_2011.jpg" 
+                alt="Daw Aung Sann Su Kyi" 
+                width="206" 
+                height="268"
+            >
+
+        </body>
+    </html>
+
+
+.. code-block:: html
+   :linenos:
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title> HTML Images </title>
+        </head>
+        <body>
+
+            <h2>Lorem Ipsum</h2>
+            <h3> This code serves image from website folder </h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc eu augue laoreet urna mollis tincidunt et a nisi. 
+                Cras ante purus, egestas sit amet pellentesque eget, 
+                ullamcorper nec turpis. Donec in nibh risus.
+                of what the image contains:
+            </p>
+
+            <img 
+                src="./images/my_image.jpg" 
                 alt="Daw Aung Sann Su Kyi" 
                 width="206" 
                 height="268"
@@ -161,10 +254,11 @@ By default, table headings are bold and centered. A table data/cell is defined w
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML Table </title>
+        </head>
         <body>
-
             <h2>Lorem Ipsum</h2>
-
             <table style="width:100%">
                 <tr>
                     <th>Firstname</th>
@@ -187,7 +281,6 @@ By default, table headings are bold and centered. A table data/cell is defined w
                     <td>80</td>
                 </tr>
             </table>
-
         </body>
     </html>
 
@@ -204,9 +297,13 @@ The list items will be marked with bullets (small black circles) by default.
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML List </title>
+        </head>
         <body>
 
             <h2>An unordered HTML list</h2>
+            <h3> Unordered link doesn't include number for items </h3>
             <ul>
                 <li>Coffee</li>
                 <li>Tea</li>
@@ -230,9 +327,13 @@ The list items will be marked with numbers by default.
 
     <!DOCTYPE html>
     <html>
+        <head>
+            <title> HTML List </title>
+        </head>
         <body>
         
             <h2>An unordered HTML list</h2>
+            <h3> Ordered link does include number for items </h3>
             <ol>
                 <li>Coffee</li>
                 <li>Tea</li>
@@ -260,6 +361,9 @@ A block-level element always starts on a new line and takes up the full width av
 
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> HTML Block Elements </title>
+            </head>
             <body>
 
                 <div>Hello</div>
@@ -288,6 +392,9 @@ An inline element does not start on a new line and only takes up as much width a
 
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> HTML Inline Elements </title>
+             </head>
             <body>
 
                 <span>Hello</span>
@@ -325,8 +432,10 @@ HTML links are defined with the <a> tag. The link address is specified in the hr
 
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> href Attribute </title>
+            </head>
             <body>
-
                 <h2>The href Attribute</h2>
                 <p>HTML links are defined with the a tag. The link address is specified 
                 in the href attribute:</p>
@@ -347,6 +456,9 @@ The filename of the image source is specified in the src attribute.
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> src Attribute </title>
+            </head>
             <body>
 
                 <h2>The src Attribute</h2>
@@ -368,6 +480,9 @@ Images in HTML have a set of size attributes, which specifies the width and heig
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> width and height Attribute </title>
+            </head>
             <body>
 
                 <h2>Size Attributes</h2>
@@ -389,6 +504,9 @@ The alt attribute specifies an alternative text to be used, when an image cannot
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> alt Attribute </title>
+            </head>
             <body>
 
                 <h2>The alt Attribute</h2>
@@ -409,7 +527,7 @@ The HTML style attribute has the following syntax.
 
 ::
 
-    <tagname style="property:value;">
+    <tagname style="property: value;">
 
 
 
@@ -423,7 +541,10 @@ This example sets the background color for a page to powderblue.
     
         <!DOCTYPE html>
         <html>
-            <body style="background-color:powderblue;">
+            <head>
+                <title> href Background Color </title>
+            </head>
+            <body style="background-color: powderblue;">
 
                 <h1>This is a heading</h1>
                 <p>This is a paragraph.</p>
@@ -441,6 +562,9 @@ The color property defines the text color for an HTML element.
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> HTML Text Color</title>
+            </head>
             <body style="background-color:powderblue;">
 
                 <h1 style="color:blue;">This is a heading</h1>
@@ -459,11 +583,12 @@ The font-family property defines the font to be used for an HTML element.
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> HTML Fonts</title>
+            </head>
             <body style="background-color:powderblue;">
-
                 <h1 style="font-family:verdana;">This is a heading</h1>
                 <p style="font-family:courier;">This is a paragraph.</p>
-
             </body>
         </html>
 
@@ -477,12 +602,13 @@ The font-size property defines the text size for an HTML element.
     :linenos:
     
         <!DOCTYPE html>
+            <head>
+                <title> HTML Text Size</title>
+            </head>
         <html>
             <body style="background-color:powderblue;">
-
                 <h1 style="font-size:300%;">This is a heading</h1>
                 <p style="font-size:32px;">This is a paragraph.</p>
-
             </body>
         </html>
 
@@ -496,6 +622,9 @@ The text-align property defines the horizontal text alignment for an HTML elemen
     
         <!DOCTYPE html>
         <html>
+            <head>
+                <title> HTML Text Alignment</title>
+            </head>
             <body style="background-color:powderblue;">
 
                 <h1 style="text-align:center;">Centered Heading</h1>
@@ -516,5 +645,5 @@ Exercises
 ---------
     1. Create a webpage that prints your todo list to the screen.
     2. Create a webpage that prints short biography of the person you admired most.
-    3. Create a webpage that prints a table of your weekly expense (date, title, cost).
+    3. Create a webpage that prints a table of your weekly expense (no, date, title, cost).
 
