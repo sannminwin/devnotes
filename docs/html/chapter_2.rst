@@ -162,13 +162,14 @@ You can click on a link and jump to another document.
 
             <h2>HTML Links</h2>
             <h3> This link connect to elements within same page</h3>
-            <a href="#about>  go to about session </a>
+            <a href="about">  go to about session </a>
             <div id="about">
             This is about session.
             </div>
 
         </body>
     </html>
+
 
 HTML Images
 -----------
