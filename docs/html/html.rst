@@ -3,9 +3,6 @@ HTML
 =============
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
-
    chapter_1.rst
    chapter_2.rst
    chapter_3.rst
